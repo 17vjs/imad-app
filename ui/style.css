@@ -1,11 +1,11 @@
 body {
     font-family: arabic;
-    background-color: red;
+    background-color: black;
     margin-top: 75px;
 }
 
 .center {
-    text-align: right;
+    text-align: center;
 }
 
 .text-big {
