@@ -4,16 +4,16 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleone={
+var articles = {
+articleone:{
   title:'article-one',
   content:'this is article one.<br>date:5/2/18'
-  };
-var articletwo={
+  },
+articletwo:{
   title:'article-two',
   content:`this is article two.<br>date:15/2/18`
-  };
- 
+  }
+};
 function createtemplate(data){
 var title=data.title;
 var content=data.content;
