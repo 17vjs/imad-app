@@ -46,7 +46,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:articlename', function (req, res) {
   
-  res.send(createtemplate(articlea[articlename]));
+  res.send(createtemplate(articles[articlename]));
 });
 
 
