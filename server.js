@@ -39,6 +39,9 @@ ${content}
 <div>
   
       <a href="/">home</a>
+        <a href="/article-one">article-one</a>
+             <a href="/article-two">article-two</a>
+        
 </div>
 </body>
 </html>`;
