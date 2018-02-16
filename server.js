@@ -37,8 +37,7 @@ ${content}
             
 </div>
 <div>
-  <a href="/activity-one">activity-one</a>
-    <a href="/activity-two">activity-two</a>
+  
       <a href="/">home</a>
 </div>
 </body>
