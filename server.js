@@ -5,11 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles = {
-articleone:{
+'article-one':{
   title:'article-one',
   content:'this is article one.<br>date:5/2/18'
   },
-articletwo:{
+'article-two':{
   title:'article-two',
   content:`this is article two.<br>date:15/2/18`
   }
@@ -45,7 +45,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','index.html'));
 });
 app.get('/:articlename', function (req, res) {
-  
+  //articlename==article-one
   res.send(createtemplate(articles[articlename]));
 });
 
