@@ -6,11 +6,11 @@ var app = express();
 app.use(morgan('combined'));
 var articles = {
 'article-one':{
-  title:'article-one',
+  title:'ARTICLE-ONE',
   content:'this is article one.<br>date:5/2/18'
   },
 'article-two':{
-  title:'article-two',
+  title:'ARTICLE-TWO',
   content:`this is article two.<br>date:15/2/18`
   }
 };
@@ -35,6 +35,11 @@ ${content}
                         
 </p>    
             
+</div>
+<div>
+  <a href="/activity-one">activity-one</a>
+    <a href="/activity-two">activity-two</a>
+      <a href="/">home</a>
 </div>
 </body>
 </html>`;
