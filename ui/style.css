@@ -1,7 +1,7 @@
 body {
     font-family: arabic;
    background-color:lightblue;
-    margin-top: 5px;
+    margin-top: 75px;
 }
 
 .center {
@@ -17,7 +17,7 @@ body {
 }
 
 .img-medium {
-    height: 300px;
+    height: 30px;
 }
 
  .container{
