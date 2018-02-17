@@ -9,13 +9,16 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 30%;
     font:sans serif;
     color:red;
 }
 
 .bold {
     font-weight: bold;
+}
+.normal{
+    font-weight: normal;
 }
 
 .img-medium {
@@ -30,3 +33,6 @@ body {
                 padding-top:80px;
                 padding-left:80px; 
             }
+.left {
+    text-align: left;
+}
