@@ -10,11 +10,12 @@ img.style.marginLeft=marginLeft + 'px';
 
 }
 img.onclick= function c() {
-    var interval = setInterval (moveRight , 1);
-    if(marginLeft==100px)
-    {
-        exit(0);
+    
+    if(marginLeft<=100)
+    { var interval = setInterval (moveRight , 1);
+        
     }
-   
+    else
+     marginLeft=0;
 
 };
