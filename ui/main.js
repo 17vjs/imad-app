@@ -39,7 +39,7 @@ submit.onclick=function (){
     };
     var nameInput=document.getElementById('name');
 var name = nameInput.value;
-    request.open('GET','http://vijaysffvf.imad.hasura-app.io/submit?='+name,true);
+    request.open('GET','http://vijaysffvf.imad.hasura-app.io/submit?=' + name,true);
     request.send(null);
   
 };
