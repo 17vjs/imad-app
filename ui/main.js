@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 
 
-var button=document.getElementById('counter');
+var button=document.getElementById('button');
 
 button.onclick = function () {
     var request= new XMLHttpRequest();
