@@ -7,5 +7,5 @@ var counter1=0;
 button.onclick = function c() {
     counter1 = counter1 + 1;
     var span=document.getElementById('count');
-    span.innerHTML = counter.toString();
+    span.innerHTML = counter1.toString();
 };
