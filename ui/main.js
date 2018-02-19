@@ -30,7 +30,7 @@ submit.onclick=function (){
               names=JSON.parse(names);
    var list='';
    for (var i=0;i<names.length;i++)
-   {list+='<li>'+names+'<li>';
+   {list+='<li>'+names[i]+'</li>';
    }
    var u1=document.getElementById('namelist');
    u1.innerHTML=list;
