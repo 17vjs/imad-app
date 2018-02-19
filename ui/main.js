@@ -3,25 +3,17 @@ alert("hi ");
 
 var img = document.getElementById('madi');
 var marginLeft=0;
-function stop(){
-    img.style.marginLeft='0px';
-    
-}
+
 function moveRight()
 { 
     marginLeft = marginLeft + 1 ;
-img.style.marginLeft=marginLeft + 'px';
-if(marginLeft==100)
-{ var interval1 = setInterval (moveLeft , 1);}
-}
-function moveLeft()
-{ 
-    marginLeft = marginLeft - 1 ;
 img.style.marginLeft=marginLeft + 'px';
 
 }
 img.onclick= function c() {
     
      var interval = setInterval (moveRight , 1);
-
+if(marginLeft=='100px'){
+    exit();
+}
 };
