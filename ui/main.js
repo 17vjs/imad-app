@@ -13,7 +13,7 @@ img.style.marginLeft=marginLeft + 'px';
 img.onclick= function c() {
     
      var interval = setInterval (moveRight , 1);
-if(marginLeft=='100px'){
+if(marginLeft==100){
     exit();
 }
 };
