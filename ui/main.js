@@ -14,15 +14,17 @@ function moveRight()
 img.style.marginLeft=marginLeft + 'px';
  
 }
-img.onclick= function c() {
+if(img.style.marginLeft=='0px')
+{img.onclick= function c() {
   
      var interval = setInterval (moveRight , 1);
 
 
-};
-img.onclick= function c() {
+};}
+else
+{img.onclick= function c() {
   
      var interval = setInterval (moveLeft , 1);
 
 
-};
+};}
