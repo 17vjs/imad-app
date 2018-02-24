@@ -84,7 +84,7 @@ pool.query('SELECT * FROM users',function(err,result){
         res.send(JSON.stringify(result));
     }
 });
-                                      res.send(counter.toString());
+                                    
                                  });                             
                                  
 app.get('/:articlename', function (req, res) {
