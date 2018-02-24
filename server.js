@@ -89,7 +89,7 @@ pool.query('SELECT * FROM users',function(err,result){
                                  
 app.get('/articles/:articlename', function (req, res) {
                                                  
-                                                 pool.query("SELECT * FROM article WHERE title=''" +req.params.articlename+ "'",function(err,result){
+                                                 pool.query("SELECT * FROM article WHERE title='" +req.params.articlename+ "'",function(err,result){
     if(err){
         res.status(500).send(err.toString());
     }
