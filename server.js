@@ -1,5 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');
+var crypto=require('crypto');
 var path = require('path');
 var Pool=require('pg').Pool;
 var config={
@@ -75,8 +76,17 @@ pool.query('SELECT * FROM users',function(err,result){
     }
 });
                                     
-                                 });                             
-                                 
+                                 });    
+                    
+function hash(input,salt){
+    var hashed=crypto.pbkdf2Sync(input, salt, 10000, 512,'sha512');
+    return hashed.toString('hex');
+    
+}
+ app.get('/hash/:input', function (req, res){
+     var hashedString=hash(req.params.input,'this');
+     res.send(hashedString);
+ });                                
 app.get('/articles/:articlename', function (req, res) {
                                                  
                                                  pool.query("SELECT * FROM article WHERE title='" +req.params.articlename+ "'",function(err,result){
